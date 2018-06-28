@@ -1,0 +1,44 @@
+{
+  "name": "github-sdk",
+  "version": "0.1.0",
+  "description": "github js sdk for https://developer.github.com/",
+  "main": "index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "start": "tsc -w",
+    "prebuildOnly": "npm run clean",
+    "buildOnly": "tsc",
+    "clean": "rm -rf lib/",
+    "prepublishOnly": "npm build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "files": [
+    "lib",
+    "src",
+    "LICENSE",
+    "package.json",
+    "tsconfig.json",
+    "README.md",
+    "yarn.lock"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yeliex/github-sdk.git"
+  },
+  "keywords": [
+    "github"
+  ],
+  "author": "yeliex <yeliex@yeliex.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yeliex/github-sdk/issues"
+  },
+  "homepage": "https://github.com/yeliex/github-sdk#readme",
+  "devDependencies": {
+    "@types/node": "^10.5.0",
+    "typescript": "^2.9.2"
+  }
+}
